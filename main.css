@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Roboto', sans-serif;
+}
+
+.protest-strike-regular,
+h1,
+body,
+input,
+button{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+body {
+    background-color: #f2f2f2;
+    padding-top: 90px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header img {
+    height: 38px;
+    margin-bottom: 18px;
+    margin-top: 12px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(27, 81, 242);
+    justify-content: center;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    max-width: 740px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 58px;
+}
+
+form input {
+    font-size: 20px;
+    background-color: rgb(242, 207, 29);
+    border: none;
+    border-bottom: 4px solid black;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+form button {
+    background-color: rgb(27, 81, 242);
+    color: white;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(242, 207, 29);
+}
+
+table tr {
+    color: rgb(27, 81, 242);
+}
+
+table td {
+    padding: 18px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0.2);
+    color: rgb(34, 162, 242);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.error-mensage {
+    display: none;
+    padding: 8px;
+    background-color: rgb(126, 0, 0);
+    color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+}
