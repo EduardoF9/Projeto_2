@@ -17,13 +17,12 @@
         </header>
         <form id="form-nome">
             <input type="text" id="nome-contato" required placeholder="Nome do contato" />
-            <input type="tel" id="numero-contato" maxlength="14" required placeholder="(XX) XXXXX-XXXX" />
-            <span id="aviso-telefone" class="error-mensage">Por favor, insira um numero de telefone válido</span>
+            <input type="number" id="numero-contato" maxlength="14" required placeholder="(XX) XXXXX-XXXX" />
             <button type="submit">CADASTRAR</button>
         </form>
         <table cellspacing="0">
             <thead>
-                <tr>
+                <tr><span id="aviso-telefone" class="error-mensage">Esse contato já foi inserido, por favor tente novamente!</span>
                     <th>Nome do contato</th>
                     <th>Numero do contato</th>
                 </tr>

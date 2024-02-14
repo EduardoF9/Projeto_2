@@ -8,13 +8,8 @@ const numero = [];
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     
-    validaNumeros();
     adicionaLinha();
-    atualizaTabela(); 
-
-    if (!validaNumeros(inputNumeroContato.value)) {
-    avisoTelefone.style.display = "block";
-    }
+    atualizaTabela();
 });
 
 document.getElementById("numero-contato").addEventListener('input'), function(event) {
@@ -25,20 +20,18 @@ document.getElementById("numero-contato").addEventListener('input'), function(ev
 
 }
 
-function validaNumeros(valor) {
-    return /^[0-9]+$/.test(valor);
-}
-
 function adicionaLinha() {
     
     const inputNomeContato = document.getElementById("nome-contato");
     const inputNumeroContato = document.getElementById("numero-contato");
 
     if (numero.includes(parseFloat(inputNumeroContato.value)) || (nome.includes(inputNomeContato.value))) {
-        alert(`Esse número ${inputNumeroContato.value} de contato ou o nome ${inputNomeContato.value}já foi inserido na sua agenda!!!`);
+        document.querySelector(".error-mensage").style.display = "block";
     } else {
+        document.querySelector(".error-mensage").style.display = "none";
         nome.push(inputNomeContato.value);
         numero.push(parseFloat(inputNumeroContato.value));
+
         
         let linha = '<tr>';
         linha += `<td>${inputNomeContato.value}</td>`;
